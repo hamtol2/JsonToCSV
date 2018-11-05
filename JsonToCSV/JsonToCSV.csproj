@@ -46,7 +46,6 @@
     <Compile Include="Constants.cs" />
     <Compile Include="CSVCreator.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Questionaire.cs" />
     <Compile Include="QuestionaireConverter.cs" />
     <Compile Include="QuestionaireJsonFormat.cs" />
@@ -56,6 +55,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

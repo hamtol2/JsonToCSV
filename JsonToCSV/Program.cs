@@ -34,6 +34,9 @@ namespace JsonToCSV
                 CSVCreator surveyConverter = new CSVCreator(surveyData[ix]);
                 surveyConverter.StartConverting();
 
+                if (questionaireData.Count == 0)
+                    continue;
+
                 QuestionaireConverter questionaireConverter = new QuestionaireConverter(questionaireData[ix]);
                 questionaireConverter.StartConverting();
             }
