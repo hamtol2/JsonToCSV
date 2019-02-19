@@ -49,7 +49,7 @@
     {
         public RecordData() { }
 
-        public string quizTitle;
+        //public string quizTitle;
         public string quizType;
         public string age;
         public string gender;
@@ -57,13 +57,14 @@
         public float elapsedTime;
         public string contentState;
         public string answer;
+        public float timeToAnswer;
         public string modelType;
         public Vector2 eyePosition;
         public string targetRegion;
-        public Vector3 robotPosition;
-        public string robotState;
+        //public Vector3 robotPosition;
+        //public string robotState;
         public string face;
-        public string gesture;
+        public string motion;
         public RecordEvent recordEvent;
     }
 }

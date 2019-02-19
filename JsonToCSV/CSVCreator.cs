@@ -49,21 +49,23 @@ namespace JsonToCSV
 
         void GenerateCSVLine(RecordData data, ref string csvString)
         {
-            csvString += data.quizTitle;
-            AddCSVValue(ref csvString, data.quizType);
+            //csvString += data.quizTitle;
+            //AddCSVValue(ref csvString, data.quizType);
+            csvString += data.quizType;
             AddCSVValue(ref csvString, data.age);
             AddCSVValue(ref csvString, data.gender);
             AddCSVValue(ref csvString, data.quizNumber.ToString());
             AddCSVValue(ref csvString, data.elapsedTime.ToString("f4"));
             AddCSVValue(ref csvString, data.contentState);
             AddCSVValue(ref csvString, data.answer);
+            AddCSVValue(ref csvString, data.timeToAnswer.ToString("f4"));
             AddCSVValue(ref csvString, data.modelType);
             AddCSVValue(ref csvString, data.eyePosition.ToString().Replace(",", ":"));
             AddCSVValue(ref csvString, data.targetRegion);
-            AddCSVValue(ref csvString, data.robotPosition.ToString().Replace(",", ":"));
-            AddCSVValue(ref csvString, data.robotState);
+            //AddCSVValue(ref csvString, data.robotPosition.ToString().Replace(",", ":"));
+            //AddCSVValue(ref csvString, data.robotState);
             AddCSVValue(ref csvString, data.face);
-            AddCSVValue(ref csvString, data.gesture);
+            AddCSVValue(ref csvString, data.motion);
             csvString += Constants.openLine;
         }
 
