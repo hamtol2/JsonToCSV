@@ -62,7 +62,7 @@ namespace JsonToCSV
             AddCSVValue(builder, data.elapsedTime.ToString("f4"));
             AddCSVValue(builder, data.contentState);
             AddCSVValue(builder, data.answer);
-            AddCSVValue(builder, data.timeToAnswer.ToString("f4"));
+            AddCSVValue(builder, data.responseTime.ToString("f4"));
             AddCSVValue(builder, data.modelType);
             AddCSVValue(builder, data.eyePosition.ToString().Replace(",", ":"));
             AddCSVValue(builder, data.targetRegion);
@@ -82,7 +82,7 @@ namespace JsonToCSV
             AddCSVValue(ref csvString, data.elapsedTime.ToString("f4"));
             AddCSVValue(ref csvString, data.contentState);
             AddCSVValue(ref csvString, data.answer);
-            AddCSVValue(ref csvString, data.timeToAnswer.ToString("f4"));
+            AddCSVValue(ref csvString, data.responseTime.ToString("f4"));
             AddCSVValue(ref csvString, data.modelType);
             AddCSVValue(ref csvString, data.eyePosition.ToString().Replace(",", ":"));
             AddCSVValue(ref csvString, data.targetRegion);

@@ -57,7 +57,7 @@
         public float elapsedTime;
         public string contentState;
         public string answer;
-        public float timeToAnswer;
+        public float responseTime;
         public string modelType;
         public Vector2 eyePosition;
         public string targetRegion;
