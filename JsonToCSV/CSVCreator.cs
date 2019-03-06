@@ -68,6 +68,8 @@ namespace JsonToCSV
             AddCSVValue(builder, data.targetRegion);
             AddCSVValue(builder, data.face);
             AddCSVValue(builder, data.motion);
+            AddCSVValue(builder, data.visualizeStartTime.ToString("f4"));
+            AddCSVValue(builder, data.visualizeEndTime.ToString("f4"));
             builder.Append(Constants.openLine);
         }
 

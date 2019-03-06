@@ -65,6 +65,10 @@
         //public string robotState;
         public string face;
         public string motion;
+
+        public float visualizeStartTime;
+        public float visualizeEndTime;
+
         public RecordEvent recordEvent;
     }
 }
